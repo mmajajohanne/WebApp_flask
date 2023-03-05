@@ -7,7 +7,7 @@ def rf(a):
 	return open(a,"r").read()
 
 def store_data(a,b):
-	return "<script>localStorage.setItem('"+a+"','"+b+"');</script>"
+	return "<script>localStorage.setItem('"+a+"','"+b+"');</script>" #localstorage, cache delete
 
 def alert(a,b):
 	return rf('alert.html').replace("a9341",a) + rf(b)
